@@ -25,9 +25,7 @@ export default function Navbar() {
         } else if (currentPath?.includes("/usuarios")) {
             // Redirige a la página de usuarios con el término de búsqueda como query
             router.push(`/usuarios/mostrar?search=${searchTerm}`);
-        } else {
-            alert("No se puede determinar la sección actual para realizar la búsqueda.");
-        }
+        } 
     };
 
     return (

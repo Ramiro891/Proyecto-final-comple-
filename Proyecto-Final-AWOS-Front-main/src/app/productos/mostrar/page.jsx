@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-// Función para obtener productos
+
 async function getProductos() {
   const url = "http://localhost:3000/productos";
   const { data } = await axios.get(url);
